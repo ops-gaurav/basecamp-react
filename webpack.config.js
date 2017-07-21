@@ -7,7 +7,7 @@ var webpack = require ('webpack');
 var path = require ('path');
 var HtmlWebpackPlugin = require ('html-webpack-plugin');
 
-var BUILD_DIR = path.resolve (__dirname, 'src/client/public');
+var BUILD_DIR = path.resolve (__dirname, 'src/client/build');
 var APP_DIR = path.resolve (__dirname, 'src/client/app');
 
 var config = {
@@ -18,7 +18,7 @@ var config = {
 	},
 
 	devServer: {
-		contentBase: './src/client/public'
+		contentBase: './src/client/build'
 	},
 
 	module: {
